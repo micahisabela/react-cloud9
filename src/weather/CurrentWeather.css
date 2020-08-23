@@ -1,0 +1,52 @@
+.CurrentWeather .card {
+  text-align: center;
+  padding: 25px 25px 0px 25px;
+  box-shadow: 2px 2px 5px rgb(167, 167, 167);
+}
+
+.CurrentWeather .card-title {
+  font-size: 55px;
+}
+
+.CurrentWeather .card-text {
+  font-size: 45px;
+}
+
+.CurrentWeather .card-text .active {
+  color: black;
+  cursor: default;
+}
+
+.CurrentWeather .card-text .active:hover {
+  text-decoration: none;
+}
+
+.CurrentWeather .last-updated-time {
+  margin-bottom: 0;
+}
+
+.CurrentWeather .current-day {
+  font-size: 25px;
+}
+
+.CurrentWeather .city {
+  font-weight: bold;
+  color: darkred;
+  font-size: 65px;
+}
+
+.CurrentWeather .current-icon {
+  max-width: 275px;
+  text-align: center;
+  padding: 20px;
+}
+
+.CurrentWeather .current-weather {
+  color: #2372af;
+}
+
+.CurrentWeather .sunrise-time,
+.sunset-time {
+  font-size: 35px;
+  color: #4d4d4d;
+}

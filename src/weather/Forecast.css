@@ -1,0 +1,18 @@
+.Forecast .icon-temp {
+  max-width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.Forecast .forecast-icon {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+.Forecast .forecast-weather {
+  font-size: 30px;
+  text-align: center;
+}

@@ -18,7 +18,7 @@ function App() {
           <Search />
           <div className="row">
             <div className="col-md-6">
-              <CurrentWeather />
+              <CurrentWeather defaultCity="Manila" />
             </div>
             <div className="col-md-6">
               <ForecastHeader />

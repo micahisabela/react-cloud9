@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 
 import "./CurrentWeather.css";
@@ -11,10 +12,8 @@ export default function CurrentWeather(props) {
     setWeatherData({
       ready: true,
       city: response.data.name,
-      time: "12:34 AM",
       temperature: response.data.main.temp,
-      day: "Sat.",
-      date: "6/20/2020",
+      date: "12:34 AM Sat. 6/20/2020",
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -28,13 +27,7 @@ export default function CurrentWeather(props) {
     return (
       <div className="CurrentWeather">
         <div className="card bg-light mb-3 border-dark">
-          <p className="last-updated-time">
-            <span className="current-day">Last updated: </span>
-            <span className="current-day">{weatherData.time}</span>
-            <span className="current-day">
-              {weatherData.day} {weatherData.date}
-            </span>
-          </p>
+          <FormattedDate date={weatherData.date} />
           <h1 className="card-title">
             Currently in <br />
             <span className="city">{weatherData.city}</span>

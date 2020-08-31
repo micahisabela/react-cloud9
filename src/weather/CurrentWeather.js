@@ -13,7 +13,7 @@ export default function CurrentWeather(props) {
       ready: true,
       city: response.data.name,
       temperature: response.data.main.temp,
-      date: "12:34 AM Sat. 6/20/2020",
+      date: response.data.dt,
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,

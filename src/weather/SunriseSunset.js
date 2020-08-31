@@ -1,4 +1,6 @@
 import React from "react";
+import sunrisePic from "./images/sunrise.png";
+import sunsetPic from "./images/sunset.png";
 
 export default function SunriseSunset(props) {
   let sunrise = new Date(props.sunrise * 1000);
@@ -19,8 +21,8 @@ export default function SunriseSunset(props) {
       <div className="row rise-set">
         <div className="col-md-6 sunrise-time">
           <img
-            src={props.weatherIconUrl}
-            alt="sunset"
+            src={sunrisePic}
+            alt="sunrise"
             width="150px"
             className="sunrise-icon"
           />
@@ -31,7 +33,7 @@ export default function SunriseSunset(props) {
         </div>
         <div className="col-md-6 sunset-time">
           <img
-            src="https://via.placeholder.com/150"
+            src={sunsetPic}
             alt="sunset"
             width="150px"
             className="sunset-icon"

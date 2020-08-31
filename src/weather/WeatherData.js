@@ -5,7 +5,7 @@ import SunriseSunset from "./SunriseSunset";
 export default function WeatherData(props) {
   return (
     <div className="WeatherData">
-      <div className="card bg-light mb-3 border-dark">
+      <div className="card mb-3 border-dark">
         <FormattedDate date={props.data.date} />
         <h1 className="card-title">
           Currently in <br />
@@ -52,7 +52,6 @@ export default function WeatherData(props) {
           <SunriseSunset
             sunrise={props.data.sunriseTime}
             sunset={props.data.sunsetTime}
-            weatherIconUrl={props.data.weatherIconUrl}
           />
         </div>
       </div>

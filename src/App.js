@@ -3,7 +3,6 @@ import React from "react";
 import "./App.css";
 
 import Header from "./Header.js";
-import Search from "./Search";
 import CurrentWeather from "./weather/CurrentWeather";
 import Footer from "./Footer";
 import ForecastHeader from "./weather/ForecastHeader";
@@ -15,16 +14,15 @@ function App() {
       <div className="container container-fluid">
         <div className="weather-info">
           <Header />
-          <Search />
           <div className="row">
             <div className="col-md-6">
               <CurrentWeather defaultCity="Manila" />
             </div>
             <div className="col-md-6">
               <ForecastHeader />
-              <Forecast />
-              <hr />
-              <Forecast />
+              <span>
+                <Forecast /> <Forecast />
+              </span>
               <hr />
               <Forecast />
               <hr />

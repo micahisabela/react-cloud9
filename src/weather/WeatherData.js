@@ -48,11 +48,11 @@ export default function WeatherData(props) {
             </span>
             <span className="current-weather"> mph</span>
           </p>
-          <br />
+          {/* <br />
           <SunriseSunset
             sunrise={props.data.sunriseTime}
             sunset={props.data.sunsetTime}
-          />
+          /> */}
         </div>
       </div>
     </div>

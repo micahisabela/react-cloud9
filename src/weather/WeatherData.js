@@ -1,6 +1,5 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-import SunriseSunset from "./SunriseSunset";
 
 export default function WeatherData(props) {
   return (
@@ -18,7 +17,6 @@ export default function WeatherData(props) {
             className="current-icon"
           />
         </p>
-        <p />
         <div className="card-body">
           <p className="card-text">
             <span className="current-weather text-capitalize">
@@ -48,11 +46,6 @@ export default function WeatherData(props) {
             </span>
             <span className="current-weather"> mph</span>
           </p>
-          {/* <br />
-          <SunriseSunset
-            sunrise={props.data.sunriseTime}
-            sunset={props.data.sunsetTime}
-          /> */}
         </div>
       </div>
     </div>

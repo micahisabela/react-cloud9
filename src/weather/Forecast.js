@@ -1,28 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Forecast.css";
-import CurrentWeatherIcon from "./CurrentWeatherIcon";
+import ForecastDisplay from "./ForecastDisplay.js";
 
 import axios from "axios";
 
 export default function Forecast(props) {
-  let units = "imperial";
-  let apiKey = "ae34e38ff098831b63cd4c4969e133cd";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&units=${units}&appid=${apiKey}`;
+  const [loaded, setLoaded] = useState(false);
+  const [forecast, setForecast] = useState(null);
 
   function showForecast(response) {
-    console.log(response.data);
+    setForecast(response.data);
+    setLoaded(true);
   }
-  axios.get(apiUrl).then(showForecast);
 
-  return (
-    <div className="Forecast">
-      <div className="icon-temp">
-        <p className="forecast-weather">
-          4:30am
-          {/* <CurrentWeatherIcon code={forecast.list[0].weather[0].icon} /> */}
-          Sunny, 75°F | <em>24°C</em>
-        </p>
+  if (loaded && props.city === forecast.city.name) {
+    console.log(forecast);
+
+    return (
+      <div className="Forecast">
+        <ForecastDisplay data={forecast.list[0]} />
+        <hr />
+        <ForecastDisplay data={forecast.list[1]} />
+        <hr />
+        <ForecastDisplay data={forecast.list[2]} />
+        <hr />
+        <ForecastDisplay data={forecast.list[3]} />
       </div>
-    </div>
-  );
+    );
+  } else {
+    let units = "imperial";
+    let apiKey = "ae34e38ff098831b63cd4c4969e133cd";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&units=${units}&appid=${apiKey}`;
+
+    axios.get(apiUrl).then(showForecast);
+
+    return null;
+  }
 }

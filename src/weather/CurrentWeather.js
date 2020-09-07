@@ -67,14 +67,6 @@ export default function CurrentWeather(props) {
           <div className="col-md-6">
             <ForecastHeader />
             <Forecast city={weatherData.city} />
-            {/* <hr />
-            <Forecast />
-            <hr />
-            <Forecast />
-            <hr />
-            <Forecast />
-            <hr />
-            <Forecast /> */}
           </div>
         </div>
       </div>

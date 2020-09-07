@@ -25,7 +25,6 @@ export default function WeatherData(props) {
             </span>
             <span className="current-weather">, </span>
             <TemperatureUnit temperature={props.data.temperature} />
-            <br />
             Humidity:{" "}
             <span className="current-weather">{props.data.humidity}</span>
             <span className="current-weather">%</span>

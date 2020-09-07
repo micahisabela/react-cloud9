@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import WeatherData from "./WeatherData";
+import ForecastHeader from "./ForecastHeader";
+import Forecast from "./Forecast";
+
 import axios from "axios";
 
 import "./CurrentWeather.css";
@@ -43,10 +46,6 @@ export default function CurrentWeather(props) {
     return (
       <div className="CurrentWeather">
         <div className="Search">
-          <button type="submit" className="btn btn-primary btn-block">
-            Current Location
-          </button>
-          <hr />
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <input
@@ -61,7 +60,23 @@ export default function CurrentWeather(props) {
             </button>
           </form>
         </div>
-        <WeatherData data={weatherData} />
+        <div className="row">
+          <div className="col-md-6">
+            <WeatherData data={weatherData} />
+          </div>
+          <div className="col-md-6">
+            <ForecastHeader />
+            <Forecast city={weatherData.city} />
+            {/* <hr />
+            <Forecast />
+            <hr />
+            <Forecast />
+            <hr />
+            <Forecast />
+            <hr />
+            <Forecast /> */}
+          </div>
+        </div>
       </div>
     );
   } else {

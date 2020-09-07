@@ -35,9 +35,7 @@ export default function CurrentWeather(props) {
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      weatherIconUrl: "https://via.placeholder.com/275",
-      sunriseTime: response.data.sys.sunrise,
-      sunsetTime: response.data.sys.sunset,
+      weatherIconCode: response.data.weather[0].icon,
     });
   }
 

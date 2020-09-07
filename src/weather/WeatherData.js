@@ -1,5 +1,6 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
+import CurrentWeatherIcon from "./CurrentWeatherIcon";
 
 export default function WeatherData(props) {
   return (
@@ -11,10 +12,9 @@ export default function WeatherData(props) {
           <span className="city">{props.data.city}</span>
         </h1>
         <p>
-          <img
-            src="https://via.placeholder.com/275"
-            alt="Current Weather Icon"
-            className="current-icon"
+          <CurrentWeatherIcon
+            code={props.data.weatherIconCode}
+            alt={props.data.description}
           />
         </p>
         <div className="card-body">

@@ -36,12 +36,6 @@
   font-size: 65px;
 }
 
-.CurrentWeather .current-icon {
-  max-width: 275px;
-  text-align: center;
-  padding: 20px;
-}
-
 .CurrentWeather .current-weather {
   color: #2372af;
 }

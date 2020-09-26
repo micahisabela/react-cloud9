@@ -23,10 +23,11 @@ Thank you to the OpenWeatherMap for having some free API and relatively easy to 
 ## Snippets
 
 ### Search form
-Coded the city search form in React with Bootstrap
+***Coded the city search form in React with Bootstrap***
 
 **User interface**
 ![Image](city-search.png?raw=true)
+
 **Code**
 ![Image](search-jsx.png?raw=true)
 

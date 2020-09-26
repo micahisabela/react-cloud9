@@ -31,19 +31,19 @@ Coded the city search form in React with Bootstrap
 **Code**
 ```
 <div className="Search">
-          <form onSubmit={handleSubmit}>
-                    <div className="form-group">
-                              <input
-                              type="text"
-                              className="form-control"
-                              placeholder="Search"
-                              onChange={getCity}
-                              />
-                    </div>
-          <button type="submit" className="btn btn-info btn-block">
-                    Change city
-          </button>
-          </form>
+ <form onSubmit={handleSubmit}>
+  <div className="form-group">
+   <input
+   type="text"
+   className="form-control"
+   placeholder="Search"
+   onChange={getCity}
+  />
+  </div>
+ <button type="submit" className="btn btn-info btn-block">
+   Change city
+ </button>
+ </form>
 </div>
 ```
 

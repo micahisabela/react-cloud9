@@ -23,7 +23,7 @@ Thank you to the OpenWeatherMap for having some free API and relatively easy to 
 ## Snippets
 
 ### Search form
-Coded the city search form in React with Bootstrap
+Coded the city search form in React with Bootstrap, and JavaScript event listeners to activate the search funcionality and access the API.
 
 **User interface**
 ![Image](city-search.png?raw=true)
@@ -47,5 +47,8 @@ Coded the city search form in React with Bootstrap
 </div>
 ```
 
+### Temperature conversion
+Used JavaScript math functionality to convert the temperature unit from imperial to metric
 
-***Used JavaScript math functionality to convert the temperature unit from imperial to metric***
+**User interface**
+![Image](farenheit.png?raw=true) | ![Image](celsius.png?raw=true)

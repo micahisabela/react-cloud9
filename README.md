@@ -10,7 +10,7 @@ I created this web application as my final project for the SheCodes Workshops Re
 
 This application features animated images for the weather icons!
 
-**Feel free to demo it [here](https://zealous-babbage-d06cf3.netlify.app)**
+***Feel free to demo it [here](https://zealous-babbage-d06cf3.netlify.app)***.
 
 ## Technologies & Frameworks used
 

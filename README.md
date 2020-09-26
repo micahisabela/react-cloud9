@@ -22,4 +22,4 @@ Thank you to the OpenWeatherMap for having some free API and relatively easy to 
 
 ## Snippets
 
-Image description
+![header image](https://github.com/micahisabela/react-cloud9/blob/master/temp-demo.mov)

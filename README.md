@@ -19,3 +19,7 @@ I created this web application as my final project for the SheCodes Workshops Re
 ### API 
 
 Thank you to the OpenWeatherMap for having some free API and relatively easy to read documentation for a beginner coder.
+
+## Snippets
+
+Image description

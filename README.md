@@ -6,7 +6,9 @@
 
 ## Purpose 
 
-I created this web application as my final project for the SheCodes Workshops React Development course. This weather application can be used for checking the current weather information (temperature, humidity, and wind speed) and 3-hour forecast in a given city in either metric or imperial units.
+I created this web application as my final project for the SheCodes Workshops React Development course. This weather application can be used for checking the current weather information (temperature, humidity, and wind speed) and 3-hour forecast in a given city in either metric or imperial units. 
+
+This application features animated images for the weather icons. 
 
 **Feel free to demo it [here](https://zealous-babbage-d06cf3.netlify.app)**
 

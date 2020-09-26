@@ -29,5 +29,23 @@ Thank you to the OpenWeatherMap for having some free API and relatively easy to 
 ![Image](city-search.png?raw=true)
 
 **Code**
-![Image](search-jsx.png?raw=true)
+```
+<div className="Search">
+          <form onSubmit={handleSubmit}>
+            <div className="form-group">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Search"
+                onChange={getCity}
+              />
+            </div>
+            <button type="submit" className="btn btn-info btn-block">
+              Change city
+            </button>
+          </form>
+        </div>
+```
 
+
+***Used JavaScript math functionality to convert the temperature unit from imperial to metric***

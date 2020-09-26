@@ -23,7 +23,7 @@ Thank you to the OpenWeatherMap for having some free API and relatively easy to 
 ## Snippets
 
 ### Search form
-***Coded the city search form in React with Bootstrap***
+Coded the city search form in React with Bootstrap
 
 **User interface**
 ![Image](city-search.png?raw=true)
@@ -32,19 +32,19 @@ Thank you to the OpenWeatherMap for having some free API and relatively easy to 
 ```
 <div className="Search">
           <form onSubmit={handleSubmit}>
-            <div className="form-group">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Search"
-                onChange={getCity}
-              />
-            </div>
-            <button type="submit" className="btn btn-info btn-block">
-              Change city
-            </button>
+                    <div className="form-group">
+                              <input
+                              type="text"
+                              className="form-control"
+                              placeholder="Search"
+                              onChange={getCity}
+                              />
+                    </div>
+          <button type="submit" className="btn btn-info btn-block">
+                    Change city
+          </button>
           </form>
-        </div>
+</div>
 ```
 
 

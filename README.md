@@ -22,4 +22,4 @@ Thank you to the OpenWeatherMap for having some free API and relatively easy to 
 
 ## Snippets
 
-![Image](./temp-demo.mov?raw=true)
+![Image](../blob/master/temp-demo.mov?raw=true)
